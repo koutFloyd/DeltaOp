@@ -2,13 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Delta</title>
+    <title>Footprint V2 CSV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+        #footprint {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        canvas {
+            width: 100% !important;
+            height: 350px !important;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-   
-    <h1>Delta</h1>
-    <script src="app.js" defer></script>
+    <div id="footprint">
+        <h2>📊 Footprint V2 desde CSV</h2>
+        <canvas id="chart1"></canvas>
+        <canvas id="chart2"></canvas>
+    </div>
+
+    <script src="footprint.js"></script>
 </body>
 </html>
