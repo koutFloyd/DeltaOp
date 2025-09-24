@@ -1,5 +1,6 @@
-//const CSV_URL = "https://gramy-pod-opcje.pl/api/options/footprint/csv/09-24-2025";
-const CSV_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent("https://gramy-pod-opcje.pl/api/options/footprint/csv/09-24-2025");
+
+const ORIGINAL_CSV_URL  = "https://gramy-pod-opcje.pl/api/options/footprint/csv/09-24-2025";
+const CSV_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(ORIGINAL_CSV_URL);
 
 
 // cargar CSV
